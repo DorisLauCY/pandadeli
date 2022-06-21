@@ -1,0 +1,126 @@
+body{
+    background-color:#e1d7ca;
+}
+img{
+    width: 100%;
+}
+.row{
+    margin:0;
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+}
+.adv-text{
+    position: absolute;
+    top: 30%;
+    z-index: 9;
+}
+.text-shadow{
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+.search-container form{
+    float: left;
+    width: 100%;
+}
+input[type=text] {
+    padding: 16px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 80%;
+  }
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    /* margin-right: 16px; */
+    background: #B1713A;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+  }
+
+  .search-container button:hover {
+    background:#C9A67A;
+  }
+.bower-color{
+    color:#85310D;
+}
+.btn-go a{
+    background-color:#B1713A;
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+.btn-go a:hover{
+    background-color:#C9A67A;
+   
+}
+footer{
+    background-color: #fff;
+    border-bottom: 5px #85310d solid;
+}
+i{
+    font-size: 30px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+   }
+    to {
+        transform: translateX(-100%);
+   }
+}
+@keyframes scroll2 {
+    from {
+        transform: translateX(0%);
+   }
+    to {
+        transform: translateX(-200%);
+   }
+}
+@keyframes scroll3 {
+    from {
+        transform: translateX(0%);
+   }
+    to {
+        transform: translateX(-300%);
+   }
+}
+.logo-wall {
+    display: flex;
+    overflow-x: hidden;
+}
+.logo-wall .logo-wrapper {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+.logo-wall .logo-wrapper:nth-child(2) {
+    animation: scroll2 40s linear infinite;
+    animation-delay: -20s;
+}
+.logo-wall .logo-wrapper.first > .logo:first-child {
+    background: blue;
+}
+.logo-wall .logo-wrapper.second > .logo:first-child {
+    background: red;
+}
+.logo-wall .logo-wrapper .logo {
+    /* width: 150px; */
+    height: 150px;
+    margin: 0 10px;
+    /* border-radius: 50%; */
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wall .logo-wrapper .logo img{
+    width: auto;
+    height: 150px;
+}
