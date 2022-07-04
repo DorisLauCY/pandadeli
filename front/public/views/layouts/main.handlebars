@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet2" href="/front/public/styles.css">
+        <title>PandaDeli</title>
+</head>
+<body>
+    {{{body}}}
+
+            
+        <footer>
+            <div class="row">
+                <div class="col-6">
+                    <a href="/"><img src="../images/logo.png" style="width: 200px;"/></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col-6">
+                    <div class="float-right">©2022 PandaDeli</div>
+                </div>
+            </div>
+        </footer>
+        
+    <style>
+        body{
+    background-color:#e1d7ca;
+}
+img{
+    width: 100%;
+}
+.row{
+    margin:0;
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+}
+.adv-text{
+    position: absolute;
+    top: 30%;
+    z-index: 9;
+}
+.text-shadow{
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+.search-container form{
+    float: left;
+    width: 100%;
+}
+input[type=text] {
+    padding: 16px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 80%;
+  }
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    /* margin-right: 16px; */
+    background: #B1713A;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+  }
+
+  .search-container button:hover {
+    background:#C9A67A;
+  }
+.bower-color{
+    color:#85310D;
+}
+.btn-go a{
+    background-color:#B1713A;
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+.btn-go a:hover{
+    background-color:#C9A67A;
+   
+}
+footer{
+    background-color: #fff;
+    border-bottom: 5px #85310d solid;
+}
+i{
+    font-size: 30px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+   }
+    to {
+        transform: translateX(-100%);
+   }
+}
+@keyframes scroll2 {
+    from {
+        transform: translateX(0%);
+   }
+    to {
+        transform: translateX(-200%);
+   }
+}
+@keyframes scroll3 {
+    from {
+        transform: translateX(0%);
+   }
+    to {
+        transform: translateX(-300%);
+   }
+}
+.logo-wall {
+    display: flex;
+    overflow-x: hidden;
+}
+.logo-wall .logo-wrapper {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+.logo-wall .logo-wrapper:nth-child(2) {
+    animation: scroll2 40s linear infinite;
+    animation-delay: -20s;
+}
+.logo-wall .logo-wrapper.first > .logo:first-child {
+    background: blue;
+}
+.logo-wall .logo-wrapper.second > .logo:first-child {
+    background: red;
+}
+.logo-wall .logo-wrapper .logo {
+    /* width: 150px; */
+    height: 150px;
+    margin: 0 10px;
+    /* border-radius: 50%; */
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wall .logo-wrapper .logo img{
+    width: auto;
+    height: 150px;
+}
+
+form{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    height: 30vh; 
+    width: auto;
+}
+
+    </style>
+</body>
+</html>
