@@ -4,7 +4,9 @@ const express = require('express');
  
 // Creating express object
 const app = express();
- 
+
+
+
 // Defining port number
 const PORT = 5000;                 
  
@@ -18,6 +20,17 @@ app.listen(PORT, () => {
   console.log(`Running server on PORT ${PORT}...`);
 })
 
+
+
+
+// About page route.
+// app.get('/about', function (req, res) {
+//    res.send('About this wiki');
+ 
+//   })
+  app.get("/about", (req, res) => {
+    res.redirect('/about');
+  });
 // Requiring modules
 const http = require("http");
 const fs = require("fs");
@@ -74,3 +87,5 @@ http.createServer((req, res) => {
  
 // Listening to the PORT: 3000
 .listen(5000, "127.0.0.1");
+
+module.exports = app;
